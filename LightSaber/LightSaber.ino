@@ -13,7 +13,12 @@
 #include <Adafruit_NeoPixel.h>
 
 
-
+//  __ 8 _ 7 _ 6 _ 5 __
+// |                   |
+//  \                  |
+//  /                  |
+// |__   _   _   _   __|
+//     1   2   3   4
 
 #ifdef __AVR__
  #include <avr/power.h> // Required for 16 MHz Adafruit Trinket
@@ -101,9 +106,9 @@ pinMode(PIN_AUX,OUTPUT);
  
   
 
-pinMode(PIN_ROT_S,INPUT);
-pinMode(PIN_ROT_A,INPUT);
-pinMode(PIN_ROT_B,INPUT);
+pinMode(PIN_ROT_S,INPUT_PULLUP);
+pinMode(PIN_ROT_A,INPUT_PULLUP);
+pinMode(PIN_ROT_B,INPUT_PULLUP);
 SetPixelToRGBA(0,cBladeColor);
 mBladeMode=mBLADE_RETRACTED;
 
