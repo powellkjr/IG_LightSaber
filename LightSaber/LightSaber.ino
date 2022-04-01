@@ -81,9 +81,7 @@ RGBA cBladeColor = {255,0,0,.1};
 #define LED_MIN 0
 #define LED_MAX 100
 
-#define NUMPIXELS 6// Popular NeoPixel ring size
-//#define NUMPIXELS 9 // Popular NeoPixel ring size
-#define NUM_LEDS 6
+#define NUMPIXELS 95// this is the upper limit based on the ram avalible.
 
 Adafruit_NeoPixel NEO_BLADE(NUMPIXELS, PIN_BLADE, NEO_GRB + NEO_KHZ800);
 
@@ -212,39 +210,6 @@ void updateStates()
  }
 
  void writeOutputs(){
-  //NEO_BLADE.clear();
-//  if(bIsHeld){
-//    NEO_BLADE.setPixelColor(1,0,255,255,0);
-//  }
-//  else{
-//  NEO_BLADE.setPixelColor(1,255,255,0);
-//  }
-//
-//  if(bIsShortHold){
-//    NEO_BLADE.setPixelColor(2,0,255,255,0);
-//  }
-//  else{
-//  NEO_BLADE.setPixelColor(2,255,255,0);
-//  }
-////
-//  if(bIsLongHold){
-//    NEO_BLADE.setPixelColor(3,0,255,255,0);
-//  }
-//  else{
-//  NEO_BLADE.setPixelColor(3,255,255,0);
-//  }
-//
-//  if(state_push){
-//    NEO_BLADE.setPixelColor(0,0,255,0,0);
-//  }
-//  else{
-//  NEO_BLADE.setPixelColor(0,255,0,0);
-//  }
-
-
-
-//NEO_BLADE.setPixelColor((encoderPosCount%4)+1,255,0,0);
-
     uint32_t oldColor=NEO_BLADE.ColorHSV(encoderPosCount,255,255);
     uint8_t r, g, b;
 
