@@ -1,16 +1,5 @@
-/*
- * HC-SR04 example sketch
- *
- * https://create.arduino.cc/projecthub/Isaac100/getting-started-with-the-hc-sr04-ultrasonic-sensor-036380
- *
- * by Isaac100
- */
+//https://github.com/JakeS0ft/NRPixelStrip
 
-// NeoPixel Ring simple sketch (c) 2013 Shae Erisson
-// Released under the GPLv3 license to match the rest of the
-// Adafruit NeoPixel library
-
-//#include <Adafruit_NeoPixel.h>
 #include <NRPixelStrip.h>
 
 
